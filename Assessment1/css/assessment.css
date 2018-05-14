@@ -1,0 +1,49 @@
+.container {
+	margin: 2px;
+	padding: 0;
+	width: 99%;
+	text-align: center;
+	border: 2px solid black;
+	/*background-image: background*/
+}
+
+body {
+	width: 99%;
+}
+
+#indexlogo {
+	float: right;
+	width: 20%;
+	height: 100%;
+}
+
+#indeximg1 {
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+
+header {
+	height: 200px;
+	font-size: 100px;
+	text-align: center;
+	background-color: yellow;
+	color: orange;
+	font-family: 'custom';
+}
+
+nav {
+	width: 20%;
+	font-size: 20px;
+	background-color: blue;
+	color: orange;
+	float: right;
+}
+
+section {
+	width: 80%;
+	font-size: 30px;
+	color: orange;
+	background-color: blue;
+	float: left;
+}

@@ -1,0 +1,44 @@
+inline styles; using style="border:2px solid black;color:red;" shouldn't be used too often
+CSS is read from top to bottom, if something is written in the top AND the bottom, it will overwrite the top version
+Inline style (inside an HTML element)
+External and internal style sheets (in the head section)
+Browser default 
+priority among defining CSS files ^^^^
+
+background-color: sets background color
+background-image: sets background image, eg background-image: url("LINK")
+background-repeat: some images need to repeat up or across, you can define which way using background-image: repeat-x or repeat-y, or no-repeat
+background-position: can actually position images, using words, eg: background-position: right top, left top, left bottom ect
+background-attachment: specifies that the background image will be fixed (not scroll with the page) eg: background-attachment: fixed;
+background: can also use this to shorten code, eg: background: #4e4e4e url('link!') no-repeat right top; HOWEVER MUST BE IN COLOR, IMAGE, REPEAT, ATTACHMENT, POSITION order.
+
+border-style: defines what type of border, eg dotted, dashed, solid, double, groove, ridge, inset, outset, none and hidden, can use more than one at a time.
+border-width: specifies the width of the border, can have from one to 4 values (for each border)
+border-color: sets color of each border, can have from one to 4 values (for each border) if not defined, inherits color of the same element
+can actually define each different border like; border-top-style, border-left-style, border-right-style, border-bottom-style.
+if border-style has 4 args: top, right, bottom, left
+if border-style has 3 args: top, right left, bottom
+if border-style has 2 args: top bottom, left right
+if border-style has 1 arg: explanatory.
+border: can also use this to shorten code eg: border: 2px solid black. must be in size, type, color order.
+can also use border-left, border-right, border-top, border-bottom to change properties of just one side
+and also border-left-color, border-right-style, border-top-width ect to change specifics of one side
+border-radius: can use this to add ROUNDED borders to an element
+
+margins can be used like; margin-top, margin-left, margin-right, margin-bottom or just like margin, and can have the following values auto, px/cm/pt, percentages, inherits.
+if using margin: 4 args. order: top, right, bottom, left
+3 args: top, right left, bottom
+2 args: top bottom, right left
+1 arg: explanatory.
+auto to horizontally center the element within its container, will take up as much space as needed and remaining space split evenly left and right
+inherit will generally use parent element and margin using that
+
+padding: can be used pretty similarly to margin, accepts cm/px/pt, percentages, and inherits
+can use like, padding-top, padding-bottom, padding-left, padding-right
+if using padding: 4 args, order: top, right, bottom, left
+3 args: top, right left, bottom
+2 args: top bottom, left right
+1 arg: explanatory.
+width specifies the width of the elements content area, content area is the portion inside the padding, border, and marging of the element.
+padding is additional to the specified width, where the width is 300px and padding is 25px, total width of the element is 350px, 300 + 25px + 25px.
+to get around adding extra width with padding, use the box-sizing property. this causes the element to maintain its width if you increase the padding it decreases content area

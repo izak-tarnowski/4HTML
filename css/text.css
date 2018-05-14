@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'newFont';
+	src: url('C:/Users/User/Documents/tafe/4html5/html/newFont.ttf');
+}
+
+.customfont {
+	font-family: 'newFont';
+	font-weight: lighter;
+	color: orange;
+}
+
+.customfont:first-letter {
+	font-family: gothic;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+p.spec {
+	font-size: 30px;
+	text-align: center;
+
+	background-color: #8e8e8e;
+
+	border: 4px dotted black;
+	border-color: blue red;
+}
+
+hr {
+	background-color: red;
+	height: 1px;
+	border: 0px;
+}
+
+table.no2 tr {
+	border: 2px solid lightgrey;
+	border-color: red green;
+	padding: 20px;
+	text-align: center;
+	
+}
+
+table.no2 th {
+	border: 3px dotted green;
+	border-color: blue green;
+	padding: 20px;
+}
+
+table.no2 td {
+	padding: 20px;
+	border: 3px dotted blue;
+	border-color: blue red;
+}

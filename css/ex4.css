@@ -1,0 +1,28 @@
+.container {
+	width: 80%;
+	max-width: 1260px;
+	min-width: 768px;
+	margin: 0 auto;
+	background-color: cyan;
+	border: 10px dotted green;
+}
+
+header {
+	font-size: 40px;
+	font-family: gothic;
+	font-weight: light;
+	color: yellow;
+	border: 10px dotted green;
+}
+
+#dec1 {
+	border: 10px dotted green;
+	float: left;
+	width: 525px;
+}
+
+#dec2 {
+	border: 10px dotted green;
+	float: right;
+	width: 525px;
+}

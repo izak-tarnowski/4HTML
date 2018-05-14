@@ -1,0 +1,18 @@
+.container {width:80%; max-width:1260px; min-width:780px; margin:0 auto;}
+
+header{background-color:blue; height:100px; width:100%; text-align:center;}
+
+nav{float:left; background-color:red; height:548px; width:10%;}
+
+section{float:left; background-color:yellow; height:548px; width:80%;text-align:center; position:relative;}
+
+aside{float:left; background-color:red; height:548px; width:10%;}
+
+footer{float:left; background-color:blue; height:100px; width:100%;}
+
+h1{color:white;}
+.tester{position:absolute; width:100px; height:100px; top:448px; left:0px; background-color:black;}
+
+#mydiv {border-radius: 15px; background-color:#6699CC; text-align:center;width:200px;}
+#mydiv2 {border-radius: 15px 45px 5px 10px; background-color:#00FFFF; text-align:center; width:200px;}
+#mydiv3 {text-align:center;width:200px; border-style:outset;border-width:8px;}

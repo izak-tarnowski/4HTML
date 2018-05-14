@@ -1,0 +1,102 @@
+.hcontainer {
+	width: 98%;
+	max-width: 1260px;
+	min-width: 780px;
+	margin:	0 auto;
+	background-color: #022F40;
+	background-image: url("../images/2pacbanner.jpg");
+}
+
+.ccontainer {
+	width: 98%;
+}
+
+header {
+	font-size: 60px;
+	font-weight: bolder;
+	color: #F0F0F0;
+	text-align: center;
+}
+
+nav {
+	float: left;
+	background-color: #022F40;
+	width: 18%;
+	border: 1px solid black;
+}
+
+nav a {
+	float: center;
+}
+
+section {
+	width: 81%;
+	float: right;
+	border: 2px solid black;
+}
+
+pre {
+	font-size: 20px;
+}
+
+#bannertext{
+	position: absolute;
+	bottom: 100%;
+}
+
+#tupacbanner{ 
+	height: 400px;
+	width: 99%;
+}
+
+#videobutton {
+	width: 70px;
+	height: 70px;
+	float: right;
+}
+
+#biobutton {
+	width: 70px;
+	height: 70px;
+	float: right;
+}
+
+#discbutton {
+	width: 70px;
+	height: 70px;
+	float: right;
+}
+
+#homebutton {
+	width: 70px;
+	height: 70px;
+	float: right;
+}
+
+#tupacalbum {
+	position: center;
+	width: 200px;
+	height: 200px;
+}
+
+section:first-letter {
+	font-family: optima	sans-serif;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}

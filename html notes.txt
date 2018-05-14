@@ -1,0 +1,165 @@
+﻿<header> - Defines a header for a document or a section
+<nav> - Defines a container for navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent self-contained article
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details
+<summary> - Defines a heading for the <details> element
+<kbd> - represents user input, eg keyboard or voice input. usually prints out in default monospace font
+<samp> - represents output from systems or program. prints in default monospace font
+<code> - represents code, prints in default monospace font, does not preserve whitespace or line-breaks (unless nested in <pre>)
+<var> - defines variable, eg  <var>E</var> = <var>mc</var><sup>2</sup> prints in italics E=mc^2
+html entities are generally keys/letters not found on some keyboards. eg &lt; = <, &gt; = >
+non-breaking spaces? - a non breaking space is a space that will not break on a new line
+	non-breaking space	&nbsp;	&#160;
+<	less than	&lt;	&#60;
+>	greater than	&gt;	&#62;
+&	ampersand	&amp;	&#38;
+"	double quotation mark	&quot;	&#34;
+'	single quotation mark (apostrophe)	&apos;	&#39;
+¢	cent	&cent;	&#162;
+£	pound	&pound;	&#163;
+¥	yen	&yen;	&#165;
+€	euro	&euro;	&#8364;
+©	copyright	&copy;	&#169;
+®	registered trademark	&reg;	&#174;
+These entity codes can also be used to make accented characters, eg a&#768 = à (a + `)
+
+scheme://prefix.domain:port/path/filename
+Explanation:
+
+scheme - defines the type of Internet service (most common is http or https)
+prefix - defines a domain prefix (default for http is www)
+domain - defines the Internet domain name (like w3schools.com)
+port - defines the port number at the host (default for http is 80)
+path - defines a path at the server (If omitted: the root directory of the site)
+filename - defines the name of a document or resource
+<form> - defines a form that's used to collect user input info, contains form elements eg; text fields, checkbox, radio buttons, submit ect
+using <input type="text/radio/submit/checkbox"> will give different input options, text, multichoice, submit button, or check box.
+default length of text fields is 20 chars.
+using <input type="radio"> will give multiple choice, though only select one answer.
+forms must be processed through form-handlers, using <form action="form_action_page"> ...stuff... </form>
+<form action="action_page" method="GET"> will show input data in page address or URL
+GET is best used when needing to temporarily save data for later retrieval, NEVER FOR SENSITIVE DATA, appends in to PROPERTY=VALUE pairs, eg:
+/action_page.php?firstname=Mickey&lastname=Mouse
+
+<form action="action_page" method="POST"> will not show input data in page address
+<form> elements ALWAYS need name attr.(eg <form name="TEMP"> or data will not be sent whatsoever. 
+<fieldset> is used to group related data in a form
+<legend> is used to caption the <fieldset> elements.
+
+list of <form> attributes:
+
+accept-charset - Specifies the charset used in the submitted form (default: the page charset).
+action - Specifies an address (url) where to submit the form (default: the submitting page).
+autocomplete - Specifies if the browser should autocomplete the form (default: on).
+enctype - Specifies the encoding of the submitted data (default: is url-encoded).
+method - Specifies the HTTP method used when submitting the form (default: GET).
+name - Specifies a name used to identify the form (for DOM usage: document.forms.name).
+novalidate - Specifies that the browser should not validate the form.
+target - Specifies the target of the address in the action attribute (default: _self).
+<select> will make a drop-down list, eg click the down arrow and options pop up
+<select name="example">
+    <option value="monday">Monday</option>
+    <option value="tuesday">Tuesday</option>
+</select>
+to predefine a selected option, use <option value="value" selected>
+use <select name="exmaple" size="5"> where scrollbox will only show 5 options at a time.
+use <select name="example" multiple> to allow selection of multiple choices.
+<textarea name="description" rows="10" cols="30"> will create a textbox 10rows x 30columns. (10 lines x 30 chars)
+textarea size can also be defines used CSS (or style attr.) eg <textarea name="description" style="width:300px; height:200px;">
+<button> defines clickable buttons. <button type="button" onclick="alert('Hello world!')"> (will pop up an alert box)
+ALWAYS specify type="button" after declaring button element, different browsers have different defaults.
+Using <datalist> may not be supported in some older browsers. <datalist> elements specify predefined options for <input> element
+the list attr. of <input> must refer to id attr. of <datalist> eg;
+<input list="browsers">
+<datalist id="browsers"> // where id="browsers" == list="browsers"
+    <option value="yada">
+    <option value="yada2">
+    <option value="yada3">
+</datalist>
+<output> represents the result of calculations, like ones performed by scripts. 
+<input> element can utilize maximum and minimum (max="MAX" min="MIN")
+type attr. for <input> has many different uses:
+<input type="text"> gives one line textbox
+<input type="password"> gives password textbox (hides chars)
+<input type="submit"> gives submit button, generally to submit info to data handler
+<input type="reset"> resets the entire form its nested within
+<input type="radio"> allows users to select ONE OF multiple options
+<input type="checkbox"> allows users to select ZERO or MORE of multiple options
+<input type="button"> gives a clickable button, use <input type="button" onclick="method(do something here)"> to have something happen after clicking.
+html5 actually introduced multiple new input types, eg color, date, datetime-local, email, month, number, range, search, tel, time, url, week. Generally not supported by older browsers.
+<input type="color"> will open color picker box to input
+<input type="date"> will allow users to input dates, depending on browser support, calendar picker might open.
+<input type="datetime-local"> specifies DATE AND TIME input field, no timezone. calendar picker might open.
+<input type="email"> will allow some devices to change keyboard settings to give ".com" key. Should ONLY contain emails, can even verify within some browsers?
+<input type="month"> allows user to input month and year. calendar picker might open.
+<input type="number"> defines a numeric only input field. Can also restrict max and min numbers (eg <input type="number" min="0" max="256">)
+Input restrictions:
+disabled - Specifies that an input field should be disabled
+max - Specifies the maximum value for an input field
+maxlength - Specifies the maximum number of character for an input field
+min - Specifies the minimum value for an input field
+pattern -Specifies a regular expression to check the input value against
+readonly - Specifies that an input field is read only (cannot be changed)
+required - Specifies that an input field is required (must be filled out)
+size - Specifies the width (in characters) of an input field
+step - Specifies the legal number intervals for an input field
+value - Specifies the default value for an input field
+<input type="number" name="quantity" min="0" max="100" step="10" value="30"> will allow any value between 0-100, in increments of 10, default val is 30.
+<input type="range"> gives scrolls bar, default range 0-100, use min="0" max="10" to give 0-10 range, step="5" changes interval from 1 to 5.
+<input type="search"> used for search fields, just like regular type="text"
+<input type="tel"> used for telephone numbers, currently ONLY SUPPORTED BY SAFARI 8
+<input type="time"> allows the user to select a time without timezone. Time picker might pop up
+<input type="url"> used for fields that should contain URLs, some devices change keyboard settings to give ".com" key
+<input type="image"> used to make images imitate buttons/submits
+<input type="week"> used to select a week and year, calendar picker might pop up
+readonly attr. defines whether element is read-only
+disabled attr. defines whether element is disabled or not. makes element unusable or unclickable and values not sent when submitting forms
+size attr. specifies size in chars (in text) or range (in range)
+maxlength attr. specifies maax allowed length for input
+attr. for <input> element
+autocomplete
+autofocus
+form
+formaction
+formenctype
+formmethod
+formnovalidate
+formtarget
+height and width
+list
+min and max
+multiple
+pattern (regexp)
+placeholder
+required
+step
+attr. for <form> element
+autocomplete
+novalidate
+
+list of attributes allowed with forms
+
+autocomplete - specifies whether form should be autocompleted by already inputted user info.
+novalidate - specifies whether validation should occur on submitting form
+autofocus - specifies which input field should get automatic focus on
+form - used to retrieve which form this specific line belongs to
+formaction - specifies the URL of a file that will process the form once submitted, overrides the action attr. within <form> element.
+formenctype - specifies which encoding method should be used when submitting form, only for forms using method="POST" overrides the enctype attr. of <form> element
+formmethod - defines the http method of sending form-data to action URL. overrides method attr. in <form> element.
+formnovalidate - specifies that we don't want validation after submitting. overrides novalidate attr. in <form> element
+formtarget - specifies name or keyword indicating where to display the response received after submitting form. overrides target attr. of <form> element
+height and width - specify height/width of an <input type="image"> ALWAYS SPECIFY THE WIDTH AND HEIGHT OF IMAGES, ELSE IMAGE WILL FLICKER
+list - refers to a <datalist> element with id of same value, contains pre-defined options for an <input> element
+min and max - specify minimum and maximum value for <input> element.
+multiple - allows user to select multiple values in <input> element. works on file, email types
+pattern - specifies [regular expression] that <input> value is checked against. works on text, search, url, email, tel, password
+placeholder - specifies a hint that describes the expected value. eg placeholder="First name" will display a textbox where you would obviously enter a first name. works with text, search, url, tel, email and password
+required - defines whether <input> is required, or must be filled in before progressing
+step - specifies the increment for an <input> element. eg step=3, valid numbers are 3, 6, 9, 12, 15 ect.
+size - specify character size to be used in textbox
+
+when changing color/text-decoration of a link, use a "pseudo-class" eg: a:link/a:visited.
+Changing color/text-decoration of a link must be used in a:link - a:visited - a:hover - a:active order else code won't work.
